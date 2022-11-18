@@ -1,15 +1,15 @@
 <h1>All Lists</h1>
 
-<ul>
+<ul class ="card-container">
   <% @lists.each do |list| %>
     <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
 </ul>
 
-<button><%= link_to "Add New List", new_list_path%></button>
+<button class="btn"><%= link_to "Add New List", new_list_path%></button>
 
-<%= cl_image_tag("vpzjuvznnbbv5tqa208w",
+<%# <%= cl_image_tag("vpzjuvznnbbv5tqa208w",
       width: 400, height: 300, crop: :fill) %>
 
-<%= cl_image_tag("s5vdywtuvhbxmssv8xcz",
+<%# <%= cl_image_tag("s5vdywtuvhbxmssv8xcz",
       width: 150, height: 150, crop: :thumb, gravity: :face) %>

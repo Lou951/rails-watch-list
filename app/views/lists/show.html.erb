@@ -4,7 +4,7 @@
   <%= bookmark.movie.title %>
   <br>
   <%= bookmark.movie.overview %>
-  <button><%= link_to "Delete",
+  <button class="btn"><%= link_to "Delete",
   bookmark_path(bookmark),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %>
@@ -21,8 +21,8 @@
  <% end %>
 
 
-<button><%= link_to "To All Lists", lists_path%></button>
-<button><%= link_to "Delete",
+<button class ="btn"><%= link_to "To All Lists", lists_path%></button>
+<button class ="btn"><%= link_to "Delete",
   root_path,
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %>
